@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+h1 {
+  margin: 30px 0;
+  color: #ffffff;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px 50px;
+  width: 500px;
+  height: 500px;
+  margin-top: 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Red Blue"
+    "Green Yellow";
+}
+
+.game_butt{
+  border: solid #ffffff 10px;
+  cursor: pointer;
+  border-radius: 40px;
+  transition: 0.2s;
+  box-shadow: 0 0 0 0;
+}
+
+.Red {
+  grid-area: Red;
+  background-color: #800020;
+ }
+
+.Blue {
+  grid-area: Blue;
+  background-color: #000080;
+ }
+
+.Green {
+  grid-area: Green;
+  background-color: Green;
+ }
+
+.Yellow {
+  grid-area: Yellow;
+  background-color: Yellow;
+ }
+
+ .highlight {
+   transition: 0.1s;
+   box-shadow: 0 0 5px 10px #515954;
+   background-color: grey;
+ }
