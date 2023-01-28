@@ -60,6 +60,8 @@ function game() {
   $('h1').html('Press Any Key to Start')
   $('body').one('keypress', function() {
     levelRound();
+  }).one('tap', function(){
+    levelRound();
   })
 }
 
